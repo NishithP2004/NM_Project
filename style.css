@@ -1,0 +1,163 @@
+* {
+    border: 0;
+}
+
+body {
+    height: 100%;
+    color: #fff;
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    background-attachment: fixed;
+    
+    -webkit-animation: gradientShift 10s ease infinite;
+    -moz-animation: gradientShift 10s ease infinite;
+    animation: gradientShift 10s ease infinite;
+    /* background-size: 100% 600%; */
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 80vw;
+    max-width: 800px;
+    margin: auto;
+}
+
+#map {
+    margin: 0;
+    width: 100%;
+    height: 60vh;
+    border-radius: 10px;
+    border: 2px solid gold;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.form-container>form {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin-right: 10px;
+    gap: 2px;
+}
+
+.glass {
+    background: rgba(134, 25, 191, 0.37);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.5px);
+    -webkit-backdrop-filter: blur(7.5px);
+    border: 1px solid rgba(134, 25, 191, 0.8);
+}
+
+#output {
+    padding-top: 10px;
+    border-top: 1px dashed white;
+    margin-right: 10px;
+}
+
+@media all and (max-width: 720px) {
+    .container {
+        flex-direction: column;
+    }
+}
+
+@-webkit-keyframes gradientShift {
+    0% {
+        background-position: 24% 0;
+    }
+
+    50% {
+        background-position: 77% 100%;
+    }
+
+    100% {
+        background-position: 24% 0;
+    }
+}
+
+@-moz-keyframes gradientShift {
+    0% {
+        background-position: 24% 0;
+    }
+
+    50% {
+        background-position: 77% 100%;
+    }
+
+    100% {
+        background-position: 24% 0;
+    }
+}
+
+@keyframes gradientShift {
+    0% {
+        background-position: 24% 0;
+    }
+
+    50% {
+        background-position: 77% 100%;
+    }
+
+    100% {
+        background-position: 24% 0;
+    }
+}
+
+.form-container p {
+    font-family: 'Lato', sans-serif;
+}
+
+form>label {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.8rem;
+}
+
+form>input::placeholder,
+form>input {
+    font-family: 'Open Sans', sans-serif;
+}
+
+form>button {
+    font-family: 'Quicksand', sans-serif;
+    border-radius: 10px;
+    padding: 10px;
+    color: #fff;
+    background-color: #000;
+    border: 1px solid black;
+    font-weight: bold;
+    margin: 2px;
+    transition: all 0.25s linear;
+}
+
+form>input[type='text'] {
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 2px;
+}
+
+form>button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+footer {
+    display: block;
+    color: #fff;
+    text-align: center;
+    width: 80vw;
+    height: auto;
+    max-width: 500px;
+    border-radius: 10px;
+    font-family: 'Fredoka', sans-serif;
+    font-weight: bold;
+    margin: 10px auto;
+}

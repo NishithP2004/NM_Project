@@ -1,1 +1,1 @@
-# NM_Project
+# Numerical Methods Project
